@@ -1,0 +1,21 @@
+{
+  "name": "mern-mercadoboat",
+  "version": "1.0.0",
+  "description": "A platform to buy and sell boats built with MERN Stack (MongoDB, Express, ReactJS, NodeJS)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "Mauricio Reis",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
