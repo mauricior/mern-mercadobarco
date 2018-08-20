@@ -4,8 +4,11 @@
   "description": "A platform to buy and sell boats built with MERN Stack (MongoDB, Express, ReactJS, NodeJS)",
   "main": "server.js",
   "scripts": {
+    "client-install": "npm install --prefix client",
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Mauricio Reis",
   "license": "MIT",
