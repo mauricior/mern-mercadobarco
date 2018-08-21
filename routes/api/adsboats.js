@@ -13,6 +13,15 @@ router.get('/', (req, res) => {
     .then(adsboats => res.json(adsboats));
 });
 
+// @route  GET api/adsboats/:type
+// @des    Get AdsBoats by Type
+// @access Public
+router.get('/:type', (req, res) => {
+  AdBoat.find()
+    .sort({ boatType: req.params.type })
+    .then(adsboats => res.json(adsboats));
+});
+
 // @route  POST api/adsboats
 // @des    Create a Post
 // @access Public
@@ -25,7 +34,8 @@ router.post('/', (req, res) => {
     boatEngines: req.body.boatEngines,
     boatTypeFuel: req.body.boatTypeFuel,
     boatSize: req.body.boatSize,
-    boatLocalization: req.body.boatLocalization
+    boatLocalization: req.body.boatLocalization,
+    boatType: req.body.boatType
   });
 
   newAdBoat.save().then(adboat => res.json(adboat));

@@ -34,6 +34,10 @@ const AdBoatSchema = new Schema({
     type: String,
     required: true
   },
+  boatType: {
+    type: String,
+    required: true
+  },
   adDate: {
     type: Date,
     default: Date.now
