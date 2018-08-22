@@ -19,13 +19,13 @@ A demo platform to buy and sell boats, built with MongoDB, Express, ReactJS and 
 
 **TODO LIST**:
 
-  - Backend:
-- [X] API to deal with the ads;
-- [ ] API to deal with accounts, signups and signins;
+- Backend:
+  - [X] API to deal with the ads;
+  - [ ] API to deal with accounts, signups and signins;
 
-  - Frontend:
-- [ ] Create a HOME component
-- [ ] Create a signin signup form component
-- [ ] Create a find Ads component
-- [ ] Create a component to deal with new, update, delete Ads
-- [ ] Create a Ads component
+- Frontend:
+  - [ ] Create a HOME component
+  - [ ] Create a signin signup form component
+  - [ ] Create a find Ads component
+  - [ ] Create a component to deal with new, update, delete Ads
+  - [ ] Create a Ads component
