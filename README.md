@@ -2,7 +2,7 @@
 
 A demo platform to buy and sell boats, built with MongoDB, Express, ReactJS and NodeJS.
 
-- Running this demo project you will be able to:
+- Running this demo project you will be able to (**already in development**):
   1. Register your advertiser or buyer user;
   2. Login with your demo account;
   3. Create a new ad as a advertiser;
