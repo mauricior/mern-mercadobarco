@@ -17,8 +17,7 @@ router.get('/', (req, res) => {
 // @des    Get AdsBoats by Type
 // @access Public
 router.get('/:type', (req, res) => {
-  AdBoat.find()
-    .sort({ boatType: req.params.type })
+  AdBoat.find({ boatType: req.params.type })
     .then(adsboats => res.json(adsboats));
 });
 
