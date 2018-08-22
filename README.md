@@ -12,8 +12,5 @@
 TODO LIST:
 
   - Backend:
-- [X] API to deal with the ads,
-- [ ] API to deal with users
-- [ ] API to deal with signin
-- [ ] API to deal with login
-- [ ] API to deal with authentication
+- [X] API to deal with the ads;
+- [ ] API to deal with accounts, signups and signins;

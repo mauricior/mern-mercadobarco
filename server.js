@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 const adsboats = require('./routes/api/adsboats');
+const accounts = require('./routes/api/accounts');
 
 const app = express();
 
@@ -20,6 +21,7 @@ mongoose
 
 // Use Routes
 app.use('/api/adsboats', adsboats);
+app.use('/api/accounts', accounts);
 
 const port = process.env.PORT || 5000;
 
