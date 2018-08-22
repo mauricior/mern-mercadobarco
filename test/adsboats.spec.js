@@ -65,7 +65,7 @@ describe('Testing API adsboats route', () => {
 
   describe('Update an adboat', () => {
     it('should update an adboat by id', (done) => {
-      var AdBoatMock = sinon.mock(new AdBoat({ completed: true}));
+      var AdBoatMock = sinon.mock(new AdBoat({ adboat: 'Update an adboat from mock'}));
       var adboat = AdBoatMock.object;
       var expectedResult = { success: true };
       AdBoatMock.expects('save').withArgs({_id: 12345}).yields(null, expectedResult);
@@ -78,7 +78,7 @@ describe('Testing API adsboats route', () => {
     });
 
     it('should return error if update action is failed', (done) => {
-      var AdBoatMock = sinon.mock(new AdBoat({ completed: true}));
+      var AdBoatMock = sinon.mock(new AdBoat({ adboat: 'Update an adboat from mock'}));
       var adboat = AdBoatMock.object;
       var expectedResult = { success: false };
       AdBoatMock.expects('save').withArgs({_id: 12345}).yields(expectedResult, null);
