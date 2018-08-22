@@ -40,6 +40,32 @@ router.post('/', (req, res) => {
   newAdBoat.save().then(adboat => res.json(adboat));
 });
 
+// @route UPDATE api/adsboats/:id
+// @des   Update an adsboats by id
+// @access Public
+  router.update('/:id', (req, res) => {
+    const updateAdBoat = new AdBoat({
+      boatFabricator: req.body.boatFabricator,
+      boatModel: req.body.boatModel,
+      boatYear: req.body.boatYear,
+      boatUseHours: req.body.boatUseHours,
+      boatEngines: req.body.boatEngines,
+      boatTypeFuel: req.body.boatTypeFuel,
+      boatSize: req.body.boatSize,
+      boatLocalization: req.body.boatLocalization,
+      boatType: req.body.boatType
+    });
+    AdBoat.findById(req.params.id, (err,adboat) => {
+      adboat = updateAdBoat;
+      adboat.save((err, adboat) => {
+        if(err) {
+          res.json({success: false, error: "Ad not updated"});
+        }
+        res.json({success: true, message: "Ad updated successfully"});
+      });
+    });
+  });
+
 // @route  DELETE api/adsboats/:id
 // @des    Delete an AdsBoats
 // @access Public
