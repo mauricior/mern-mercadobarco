@@ -40,7 +40,7 @@ const AdBoatSchema = new Schema({
   },
   adDate: {
     type: Date,
-    default: Date.now
+    default: Date.now()
   }
 });
 
