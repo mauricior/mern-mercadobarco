@@ -29,6 +29,8 @@
     "mocha": "^5.2.0",
     "nodemon": "^1.18.3",
     "request": "^2.88.0",
-    "should": "^13.2.3"
+    "should": "^13.2.3",
+    "sinon": "^6.1.5",
+    "sinon-mongoose": "^2.2.1"
   }
 }
