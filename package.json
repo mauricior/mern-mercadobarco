@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A platform to buy and sell boats built with MERN Stack (MongoDB, Express, ReactJS, NodeJS)",
   "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MauricioR/mern-mercadobarco.git"
+  },
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
