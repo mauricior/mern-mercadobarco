@@ -43,7 +43,7 @@ router.post('/', (req, res) => {
 // @route UPDATE api/adsboats/:id
 // @des   Update an adsboats by id
 // @access Public
-  router.update('/:id', (req, res) => {
+  router.patch('/:id', (req, res) => {
     const updateAdBoat = new AdBoat({
       boatFabricator: req.body.boatFabricator,
       boatModel: req.body.boatModel,
