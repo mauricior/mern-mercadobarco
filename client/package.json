@@ -12,6 +12,10 @@
     "reactstrap": "^6.4.0",
     "uuid": "^3.3.2"
   },
+  "jest": {
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "setupFiles": ["./src/setupTests.js"]
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
