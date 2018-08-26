@@ -6,11 +6,11 @@ class Signin extends Component {
     return (
       <Form>
         <FormGroup>
-          <Label for="firstName">Username</Label>
+          <Label for="username">Username</Label>
           <Input type="text" name="name" id="username" />
         </FormGroup>
         <FormGroup>
-          <Label for="lastName">Password</Label>
+          <Label for="password">Password</Label>
           <Input type="password" name="password" id="password" />
         </FormGroup>
         <Button>Sign in</Button>
