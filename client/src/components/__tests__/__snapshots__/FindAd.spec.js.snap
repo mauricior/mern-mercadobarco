@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing FindAd Component should render correctly 1`] = `
+<div>
+  <Nav
+    tabs={true}
+    tag="ul"
+    vertical={false}
+  >
+    <NavItem
+      tag="li"
+    >
+      <NavLink
+        className="active"
+        onClick={[Function]}
+        tag="a"
+      >
+        Lanchas
+      </NavLink>
+    </NavItem>
+    <NavItem
+      tag="li"
+    >
+      <NavLink
+        className=""
+        onClick={[Function]}
+        tag="a"
+      >
+        Veleiros
+      </NavLink>
+    </NavItem>
+    <NavItem
+      tag="li"
+    >
+      <NavLink
+        className=""
+        onClick={[Function]}
+        tag="a"
+      >
+        Jet Skis
+      </NavLink>
+    </NavItem>
+  </Nav>
+  <TabContent
+    activeTab="1"
+    tag="div"
+  >
+    <TabPane
+      tabId="1"
+      tag="div"
+    >
+      <Row
+        tag="div"
+      >
+        <Col
+          sm="12"
+          tag="div"
+          widths={
+            Array [
+              "xs",
+              "sm",
+              "md",
+              "lg",
+              "xl",
+            ]
+          }
+        >
+          <Card
+            body={true}
+            tag="div"
+          >
+            <CardTitle
+              tag="h5"
+            >
+              Lanchas
+            </CardTitle>
+            <CardText
+              tag="p"
+            >
+              Filter
+            </CardText>
+            <Button
+              color="secondary"
+              tag="button"
+            >
+              Search
+            </Button>
+          </Card>
+        </Col>
+      </Row>
+    </TabPane>
+  </TabContent>
+</div>
+`;

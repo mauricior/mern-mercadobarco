@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Signin Component should render correctly 1`] = `
+<Signin>
+  <Form
+    tag="form"
+  >
+    <form
+      className=""
+    >
+      <FormGroup
+        tag="div"
+      >
+        <div
+          className="position-relative form-group"
+        >
+          <Label
+            for="username"
+            tag="label"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            <label
+              className=""
+              htmlFor="username"
+            >
+              Username
+            </label>
+          </Label>
+          <Input
+            id="username"
+            name="name"
+            type="text"
+          >
+            <input
+              className="form-control"
+              id="username"
+              name="name"
+              type="text"
+            />
+          </Input>
+        </div>
+      </FormGroup>
+      <FormGroup
+        tag="div"
+      >
+        <div
+          className="position-relative form-group"
+        >
+          <Label
+            for="password"
+            tag="label"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            <label
+              className=""
+              htmlFor="password"
+            >
+              Password
+            </label>
+          </Label>
+          <Input
+            id="password"
+            name="password"
+            type="password"
+          >
+            <input
+              className="form-control"
+              id="password"
+              name="password"
+              type="password"
+            />
+          </Input>
+        </div>
+      </FormGroup>
+      <Button
+        color="secondary"
+        tag="button"
+      >
+        <button
+          className="btn btn-secondary"
+          onClick={[Function]}
+        >
+          Sign in
+        </button>
+      </Button>
+    </form>
+  </Form>
+</Signin>
+`;

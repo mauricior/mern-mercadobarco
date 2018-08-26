@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Signup Component should render correctly 1`] = `
+<Signup>
+  <Form
+    tag="form"
+  >
+    <form
+      className=""
+    >
+      <FormGroup
+        tag="div"
+      >
+        <div
+          className="position-relative form-group"
+        >
+          <Label
+            for="firstName"
+            tag="label"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            <label
+              className=""
+              htmlFor="firstName"
+            >
+              First Name
+            </label>
+          </Label>
+          <Input
+            id="firstName"
+            name="name"
+            type="text"
+          >
+            <input
+              className="form-control"
+              id="firstName"
+              name="name"
+              type="text"
+            />
+          </Input>
+        </div>
+      </FormGroup>
+      <FormGroup
+        tag="div"
+      >
+        <div
+          className="position-relative form-group"
+        >
+          <Label
+            for="lastName"
+            tag="label"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            <label
+              className=""
+              htmlFor="lastName"
+            >
+              Last Name
+            </label>
+          </Label>
+          <Input
+            id="lastName"
+            name="name"
+            type="text"
+          >
+            <input
+              className="form-control"
+              id="lastName"
+              name="name"
+              type="text"
+            />
+          </Input>
+        </div>
+      </FormGroup>
+      <FormGroup
+        tag="div"
+      >
+        <div
+          className="position-relative form-group"
+        >
+          <Label
+            for="email"
+            tag="label"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            <label
+              className=""
+              htmlFor="email"
+            >
+              Email
+            </label>
+          </Label>
+          <Input
+            id="email"
+            name="email"
+            type="email"
+          >
+            <input
+              className="form-control"
+              id="email"
+              name="email"
+              type="email"
+            />
+          </Input>
+        </div>
+      </FormGroup>
+      <FormGroup
+        tag="div"
+      >
+        <div
+          className="position-relative form-group"
+        >
+          <Label
+            for="password"
+            tag="label"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            <label
+              className=""
+              htmlFor="password"
+            >
+              Password
+            </label>
+          </Label>
+          <Input
+            id="password"
+            name="password"
+            type="password"
+          >
+            <input
+              className="form-control"
+              id="password"
+              name="password"
+              type="password"
+            />
+          </Input>
+        </div>
+      </FormGroup>
+      <Button
+        color="secondary"
+        tag="button"
+      >
+        <button
+          className="btn btn-secondary"
+          onClick={[Function]}
+        >
+          Submit
+        </button>
+      </Button>
+    </form>
+  </Form>
+</Signup>
+`;
