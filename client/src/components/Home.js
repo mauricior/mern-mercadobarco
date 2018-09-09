@@ -7,9 +7,9 @@ class Home extends Component {
     super(props);
 
     this.state = {
-      sellItems: [{id: 1, itemName: "Lanchas", filter: {type: '', manufacturer: '', minValue: '', maxValue: '', minFoot: '', maxFoot: '', location: ''}},
-                  {id: 2, itemName: "Veleiros", filter: {type: '', manufacturer: '', minValue: '', maxValue: '', minFoot: '', maxFoot: '', location: ''}},
-                  {id: 3, itemName: "Jet Skis", filter: {type: '', manufacturer: '', minValue: '', maxValue: '', minFoot: '', maxFoot: '', location: ''}}]
+      sellItems: [{id: 1, itemName: "Lanchas"},
+                  {id: 2, itemName: "Veleiros"},
+                  {id: 3, itemName: "Jet Skis"}]
     }
   }
   render() {
