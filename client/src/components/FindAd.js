@@ -8,7 +8,8 @@ class FindAd extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      activeTab: '1'
+      activeTab: 1,
+      sellItems: this.props.items
     };
   }
 
@@ -23,43 +24,35 @@ class FindAd extends Component {
     return (
       <div>
         <Nav tabs>
-          <NavItem>
-            <NavLink
-              className={classnames({ active: this.state.activeTab === '1'})}
-              onClick={() => { this.toggle('1'); }}
-              >
-              Lanchas
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              className={classnames({ active: this.state.activeTab === '2'})}
-              onClick={() => { this.toggle('2'); }}
-              >
-              Veleiros
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              className={classnames({ active: this.state.activeTab === '3'})}
-              onClick={() => { this.toggle('3'); }}
-              >
-              Jet Skis
-            </NavLink>
-          </NavItem>
+          {this.state.sellItems.map(item => {
+            return (
+              <NavItem>
+                <NavLink
+                  className={classnames({ active: this.state.activeTab === item.id})}
+                  onClick={() => { this.toggle(item.id); }}
+                  >
+                  {item.itemName}
+                </NavLink>
+              </NavItem>
+            );
+          })}
         </Nav>
         <TabContent activeTab={this.state.activeTab}>
-          <TabPane tabId="1">
-            <Row>
-              <Col sm="12">
-                <Card body>
-                  <CardTitle>Lanchas</CardTitle>
-                  <CardText>Filter</CardText>
-                  <Button>Search</Button>
-                </Card>
-              </Col>
-            </Row>
-          </TabPane>
+          {this.state.sellItems.map(item => {
+            return (
+              <TabPane tabId={item.id}>
+                <Row>
+                  <Col sm="12">
+                    <Card body>
+                      <CardTitle>{item.itemName}</CardTitle>
+                      <CardText>Filter</CardText>
+                      <Button>Search</Button>
+                    </Card>
+                  </Col>
+                </Row>
+              </TabPane>
+            );
+          })}
         </TabContent>
       </div>
     );
