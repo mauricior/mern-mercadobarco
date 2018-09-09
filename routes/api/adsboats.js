@@ -33,7 +33,11 @@ router.post('/', (req, res) => {
     boatEngines: req.body.boatEngines,
     boatTypeFuel: req.body.boatTypeFuel,
     boatSize: req.body.boatSize,
-    boatLocalization: req.body.boatLocalization,
+    boatPrice: req.body.boatPrice,
+    boatLocalization: {
+      city: req.body.boatLocalization.city,
+      state: req.body.boatLocalization.state
+    },
     boatType: req.body.boatType
   });
 
