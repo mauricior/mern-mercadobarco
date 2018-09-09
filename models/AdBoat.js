@@ -30,9 +30,19 @@ const AdBoatSchema = new Schema({
     type: Number,
     required: true
   },
-  boatLocalization: {
+  boatPrice: {
     type: String,
     required: true
+  },
+  boatLocalization: {
+    city: {
+      type: String,
+      required: true
+    },
+    state: {
+      type: String,
+      required: true
+    }
   },
   boatType: {
     type: String,
